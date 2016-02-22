@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDE6D23A1C7AD18D00A113AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6D2391C7AD18D00A113AE /* AppDelegate.swift */; };
+		FDE6D23E1C7AD18D00A113AE /* ScnMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6D23D1C7AD18D00A113AE /* ScnMenu.swift */; };
+		FDE6D2401C7AD18D00A113AE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6D23F1C7AD18D00A113AE /* GameViewController.swift */; };
+		FDE6D2431C7AD18D00A113AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE6D2411C7AD18D00A113AE /* Main.storyboard */; };
+		FDE6D2451C7AD18D00A113AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE6D2441C7AD18D00A113AE /* Assets.xcassets */; };
+		FDE6D2481C7AD18D00A113AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE6D2461C7AD18D00A113AE /* LaunchScreen.storyboard */; };
+		FDE6D2531C7AD18D00A113AE /* DragonsRageSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6D2521C7AD18D00A113AE /* DragonsRageSwiftTests.swift */; };
+		FDE6D25E1C7AD18D00A113AE /* DragonsRageSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6D25D1C7AD18D00A113AE /* DragonsRageSwiftUITests.swift */; };
+		FDE6D2701C7AD8B800A113AE /* MenuBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE6D26F1C7AD8B800A113AE /* MenuBG@2x.png */; };
+		FDE6D2751C7B88D500A113AE /* MenuBtnJogar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE6D2731C7B88D500A113AE /* MenuBtnJogar@2x.png */; };
+		FDE6D2761C7B88D500A113AE /* MenuBtnRank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE6D2741C7B88D500A113AE /* MenuBtnRank@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDE6D24F1C7AD18D00A113AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE6D22E1C7AD18D00A113AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDE6D2351C7AD18D00A113AE;
+			remoteInfo = DragonsRageSwift;
+		};
+		FDE6D25A1C7AD18D00A113AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE6D22E1C7AD18D00A113AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDE6D2351C7AD18D00A113AE;
+			remoteInfo = DragonsRageSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDE6D2361C7AD18D00A113AE /* DragonsRageSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonsRageSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE6D2391C7AD18D00A113AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDE6D23D1C7AD18D00A113AE /* ScnMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScnMenu.swift; sourceTree = "<group>"; };
+		FDE6D23F1C7AD18D00A113AE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FDE6D2421C7AD18D00A113AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDE6D2441C7AD18D00A113AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDE6D2471C7AD18D00A113AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDE6D2491C7AD18D00A113AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDE6D24E1C7AD18D00A113AE /* DragonsRageSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonsRageSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE6D2521C7AD18D00A113AE /* DragonsRageSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsRageSwiftTests.swift; sourceTree = "<group>"; };
+		FDE6D2541C7AD18D00A113AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDE6D2591C7AD18D00A113AE /* DragonsRageSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonsRageSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE6D25D1C7AD18D00A113AE /* DragonsRageSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsRageSwiftUITests.swift; sourceTree = "<group>"; };
+		FDE6D25F1C7AD18D00A113AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDE6D26F1C7AD8B800A113AE /* MenuBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuBG@2x.png"; sourceTree = "<group>"; };
+		FDE6D2731C7B88D500A113AE /* MenuBtnJogar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuBtnJogar@2x.png"; sourceTree = "<group>"; };
+		FDE6D2741C7B88D500A113AE /* MenuBtnRank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuBtnRank@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDE6D2331C7AD18D00A113AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDE6D24B1C7AD18D00A113AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDE6D2561C7AD18D00A113AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDE6D22D1C7AD18D00A113AE = {
+			isa = PBXGroup;
+			children = (
+				FDE6D2381C7AD18D00A113AE /* DragonsRageSwift */,
+				FDE6D2511C7AD18D00A113AE /* DragonsRageSwiftTests */,
+				FDE6D25C1C7AD18D00A113AE /* DragonsRageSwiftUITests */,
+				FDE6D2371C7AD18D00A113AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDE6D2371C7AD18D00A113AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDE6D2361C7AD18D00A113AE /* DragonsRageSwift.app */,
+				FDE6D24E1C7AD18D00A113AE /* DragonsRageSwiftTests.xctest */,
+				FDE6D2591C7AD18D00A113AE /* DragonsRageSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDE6D2381C7AD18D00A113AE /* DragonsRageSwift */ = {
+			isa = PBXGroup;
+			children = (
+				FDE6D26D1C7AD89E00A113AE /* Resources */,
+				FDE6D26B1C7AD84700A113AE /* ViewControllers */,
+				FDE6D26C1C7AD86400A113AE /* Scenes */,
+				FDE6D2391C7AD18D00A113AE /* AppDelegate.swift */,
+				FDE6D2411C7AD18D00A113AE /* Main.storyboard */,
+				FDE6D2441C7AD18D00A113AE /* Assets.xcassets */,
+				FDE6D2461C7AD18D00A113AE /* LaunchScreen.storyboard */,
+				FDE6D2491C7AD18D00A113AE /* Info.plist */,
+			);
+			path = DragonsRageSwift;
+			sourceTree = "<group>";
+		};
+		FDE6D2511C7AD18D00A113AE /* DragonsRageSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDE6D2521C7AD18D00A113AE /* DragonsRageSwiftTests.swift */,
+				FDE6D2541C7AD18D00A113AE /* Info.plist */,
+			);
+			path = DragonsRageSwiftTests;
+			sourceTree = "<group>";
+		};
+		FDE6D25C1C7AD18D00A113AE /* DragonsRageSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDE6D25D1C7AD18D00A113AE /* DragonsRageSwiftUITests.swift */,
+				FDE6D25F1C7AD18D00A113AE /* Info.plist */,
+			);
+			path = DragonsRageSwiftUITests;
+			sourceTree = "<group>";
+		};
+		FDE6D26B1C7AD84700A113AE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDE6D23F1C7AD18D00A113AE /* GameViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FDE6D26C1C7AD86400A113AE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FDE6D23D1C7AD18D00A113AE /* ScnMenu.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		FDE6D26D1C7AD89E00A113AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDE6D26E1C7AD8AC00A113AE /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FDE6D26E1C7AD8AC00A113AE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FDE6D2731C7B88D500A113AE /* MenuBtnJogar@2x.png */,
+				FDE6D2741C7B88D500A113AE /* MenuBtnRank@2x.png */,
+				FDE6D26F1C7AD8B800A113AE /* MenuBG@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDE6D2351C7AD18D00A113AE /* DragonsRageSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDE6D2621C7AD18D00A113AE /* Build configuration list for PBXNativeTarget "DragonsRageSwift" */;
+			buildPhases = (
+				FDE6D2321C7AD18D00A113AE /* Sources */,
+				FDE6D2331C7AD18D00A113AE /* Frameworks */,
+				FDE6D2341C7AD18D00A113AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DragonsRageSwift;
+			productName = DragonsRageSwift;
+			productReference = FDE6D2361C7AD18D00A113AE /* DragonsRageSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDE6D24D1C7AD18D00A113AE /* DragonsRageSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDE6D2651C7AD18D00A113AE /* Build configuration list for PBXNativeTarget "DragonsRageSwiftTests" */;
+			buildPhases = (
+				FDE6D24A1C7AD18D00A113AE /* Sources */,
+				FDE6D24B1C7AD18D00A113AE /* Frameworks */,
+				FDE6D24C1C7AD18D00A113AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDE6D2501C7AD18D00A113AE /* PBXTargetDependency */,
+			);
+			name = DragonsRageSwiftTests;
+			productName = DragonsRageSwiftTests;
+			productReference = FDE6D24E1C7AD18D00A113AE /* DragonsRageSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDE6D2581C7AD18D00A113AE /* DragonsRageSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDE6D2681C7AD18D00A113AE /* Build configuration list for PBXNativeTarget "DragonsRageSwiftUITests" */;
+			buildPhases = (
+				FDE6D2551C7AD18D00A113AE /* Sources */,
+				FDE6D2561C7AD18D00A113AE /* Frameworks */,
+				FDE6D2571C7AD18D00A113AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDE6D25B1C7AD18D00A113AE /* PBXTargetDependency */,
+			);
+			name = DragonsRageSwiftUITests;
+			productName = DragonsRageSwiftUITests;
+			productReference = FDE6D2591C7AD18D00A113AE /* DragonsRageSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDE6D22E1C7AD18D00A113AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Filipe Kunioshi";
+				TargetAttributes = {
+					FDE6D2351C7AD18D00A113AE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					FDE6D24D1C7AD18D00A113AE = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FDE6D2351C7AD18D00A113AE;
+					};
+					FDE6D2581C7AD18D00A113AE = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FDE6D2351C7AD18D00A113AE;
+					};
+				};
+			};
+			buildConfigurationList = FDE6D2311C7AD18D00A113AE /* Build configuration list for PBXProject "DragonsRageSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDE6D22D1C7AD18D00A113AE;
+			productRefGroup = FDE6D2371C7AD18D00A113AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDE6D2351C7AD18D00A113AE /* DragonsRageSwift */,
+				FDE6D24D1C7AD18D00A113AE /* DragonsRageSwiftTests */,
+				FDE6D2581C7AD18D00A113AE /* DragonsRageSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDE6D2341C7AD18D00A113AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE6D2481C7AD18D00A113AE /* LaunchScreen.storyboard in Resources */,
+				FDE6D2451C7AD18D00A113AE /* Assets.xcassets in Resources */,
+				FDE6D2751C7B88D500A113AE /* MenuBtnJogar@2x.png in Resources */,
+				FDE6D2431C7AD18D00A113AE /* Main.storyboard in Resources */,
+				FDE6D2701C7AD8B800A113AE /* MenuBG@2x.png in Resources */,
+				FDE6D2761C7B88D500A113AE /* MenuBtnRank@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDE6D24C1C7AD18D00A113AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDE6D2571C7AD18D00A113AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDE6D2321C7AD18D00A113AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE6D23E1C7AD18D00A113AE /* ScnMenu.swift in Sources */,
+				FDE6D2401C7AD18D00A113AE /* GameViewController.swift in Sources */,
+				FDE6D23A1C7AD18D00A113AE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDE6D24A1C7AD18D00A113AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE6D2531C7AD18D00A113AE /* DragonsRageSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDE6D2551C7AD18D00A113AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE6D25E1C7AD18D00A113AE /* DragonsRageSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDE6D2501C7AD18D00A113AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDE6D2351C7AD18D00A113AE /* DragonsRageSwift */;
+			targetProxy = FDE6D24F1C7AD18D00A113AE /* PBXContainerItemProxy */;
+		};
+		FDE6D25B1C7AD18D00A113AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDE6D2351C7AD18D00A113AE /* DragonsRageSwift */;
+			targetProxy = FDE6D25A1C7AD18D00A113AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDE6D2411C7AD18D00A113AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDE6D2421C7AD18D00A113AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDE6D2461C7AD18D00A113AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDE6D2471C7AD18D00A113AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDE6D2601C7AD18D00A113AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FDE6D2611C7AD18D00A113AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDE6D2631C7AD18D00A113AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DragonsRageSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kunioshi.DragonsRageSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FDE6D2641C7AD18D00A113AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DragonsRageSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kunioshi.DragonsRageSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FDE6D2661C7AD18D00A113AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = DragonsRageSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kunioshi.DragonsRageSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragonsRageSwift.app/DragonsRageSwift";
+			};
+			name = Debug;
+		};
+		FDE6D2671C7AD18D00A113AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DragonsRageSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kunioshi.DragonsRageSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragonsRageSwift.app/DragonsRageSwift";
+			};
+			name = Release;
+		};
+		FDE6D2691C7AD18D00A113AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = DragonsRageSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kunioshi.DragonsRageSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DragonsRageSwift;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FDE6D26A1C7AD18D00A113AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DragonsRageSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kunioshi.DragonsRageSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DragonsRageSwift;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDE6D2311C7AD18D00A113AE /* Build configuration list for PBXProject "DragonsRageSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDE6D2601C7AD18D00A113AE /* Debug */,
+				FDE6D2611C7AD18D00A113AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDE6D2621C7AD18D00A113AE /* Build configuration list for PBXNativeTarget "DragonsRageSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDE6D2631C7AD18D00A113AE /* Debug */,
+				FDE6D2641C7AD18D00A113AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDE6D2651C7AD18D00A113AE /* Build configuration list for PBXNativeTarget "DragonsRageSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDE6D2661C7AD18D00A113AE /* Debug */,
+				FDE6D2671C7AD18D00A113AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDE6D2681C7AD18D00A113AE /* Build configuration list for PBXNativeTarget "DragonsRageSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDE6D2691C7AD18D00A113AE /* Debug */,
+				FDE6D26A1C7AD18D00A113AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDE6D22E1C7AD18D00A113AE /* Project object */;
+}
