@@ -9,7 +9,10 @@
 import SpriteKit
 
 class ScnWorldMap: DRScene {
-    static let charPosition: CGPoint = CGPoint(x: 0, y: 0)
+    /**
+     The Main Character of the game (the Player itself).
+     */
+    static let mainCharacter: DRCharacter = DRCharacter()
     
     override func didMoveToView(view: SKView) {
         

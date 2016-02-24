@@ -18,7 +18,8 @@ class ScnMenu: DRScene {
         
         self.addChild(imgMenuBG)
         
-        // Add buttons
+        // MARK: Add buttons
+        
         // Add Play Button
         let btnPlay = SKSpriteNode(imageNamed: "MenuBtnJogar")
         btnPlay.name = "MenuBtnJogar"
@@ -34,14 +35,18 @@ class ScnMenu: DRScene {
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        // Check in the touched location if there is any interactive Node. If there is, get only the first node of the first touch.
         if let firstTouch = touches.first, firstNode = self.getFirstSpriteNodeAt(firstTouch.locationInNode(self)) {
+            // Get the name of the node to determine what should happen now.
             if let nodeName = firstNode.name {
                 switch (nodeName) {
                     case "MenuBtnJogar":
+                        // Request a change scene
                         let userInfo = ["btnActionName": "ChangeScene", "SceneName": SceneName.WorldMap.rawValue]
                         NSNotificationCenter.defaultCenter().postNotificationName("ButtonPressed", object: self, userInfo: userInfo)
                         break
                     case "MenuBtnRank":
+                        // Request a change scene
                         let userInfo = ["btnActionName": "ChangeScene", "SceneName": SceneName.Rank.rawValue]
                         NSNotificationCenter.defaultCenter().postNotificationName("ButtonPressed", object: self, userInfo: userInfo)
                         break
