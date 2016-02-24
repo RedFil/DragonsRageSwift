@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-class ScnMenu: SKScene {
+class ScnMenu: DRScene {
     override func didMoveToView(view: SKView) {
         // Add the background image
         let imgMenuBG = SKSpriteNode(imageNamed: "MenuBG")
@@ -19,33 +19,39 @@ class ScnMenu: SKScene {
         self.addChild(imgMenuBG)
         
         // Add buttons
+        // Add Play Button
         let btnPlay = SKSpriteNode(imageNamed: "MenuBtnJogar")
+        btnPlay.name = "MenuBtnJogar"
         btnPlay.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame) - 50)
         
+        // Add Rank Button (according to the Play Button)
         let btnRank = SKSpriteNode(imageNamed: "MenuBtnRank")
-        btnRank.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame) - (btnPlay.position.x + btnPlay.size.height) - 50)
+        btnRank.name = "MenuBtnRank"
+        btnRank.position = CGPoint(x:btnPlay.position.x, y:btnPlay.position.y - btnPlay.size.height - 20)
         
         self.addChild(btnPlay)
         self.addChild(btnRank)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-       /* Called when a touch begins */
-        
-        for touch in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.01
-            sprite.yScale = 0.01
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+        if let firstTouch = touches.first, firstNode = self.getFirstSpriteNodeAt(firstTouch.locationInNode(self)) {
+            if let nodeName = firstNode.name {
+                switch (nodeName) {
+                    case "MenuBtnJogar":
+                        let userInfo = ["btnActionName": "ChangeScene", "SceneName": SceneName.WorldMap.rawValue]
+                        NSNotificationCenter.defaultCenter().postNotificationName("ButtonPressed", object: self, userInfo: userInfo)
+                        break
+                    case "MenuBtnRank":
+                        let userInfo = ["btnActionName": "ChangeScene", "SceneName": SceneName.Rank.rawValue]
+                        NSNotificationCenter.defaultCenter().postNotificationName("ButtonPressed", object: self, userInfo: userInfo)
+                        break
+                    default:
+                        print("Error! No action set to this Node named: " + nodeName)
+                        break
+                }
+            } else {
+                print("Error! No action set to this Node without name")
+            }
         }
     }
    
