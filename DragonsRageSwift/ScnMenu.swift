@@ -11,7 +11,7 @@ import SpriteKit
 class ScnMenu: DRScene {
     override func didMoveToView(view: SKView) {
         // Add the background image
-        let imgMenuBG = SKSpriteNode(imageNamed: "MenuBG")
+        let imgMenuBG = DRSpriteNode(imageNamed: "MenuBG")
         imgMenuBG.size = self.size
         imgMenuBG.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         imgMenuBG.zPosition = -100
@@ -21,12 +21,12 @@ class ScnMenu: DRScene {
         // MARK: Add buttons
         
         // Add Play Button
-        let btnPlay = SKSpriteNode(imageNamed: "MenuBtnJogar")
+        let btnPlay = DRSpriteNode(imageNamed: "MenuBtnJogar")
         btnPlay.name = "MenuBtnJogar"
         btnPlay.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame) - 50)
         
         // Add Rank Button (according to the Play Button)
-        let btnRank = SKSpriteNode(imageNamed: "MenuBtnRank")
+        let btnRank = DRSpriteNode(imageNamed: "MenuBtnRank")
         btnRank.name = "MenuBtnRank"
         btnRank.position = CGPoint(x:btnPlay.position.x, y:btnPlay.position.y - btnPlay.size.height - 20)
         
