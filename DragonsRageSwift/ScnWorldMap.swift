@@ -59,7 +59,7 @@ class ScnWorldMap: DRScene {
     }
     
     /**
-     Transcribes the World Map code based into sprite based map in the scene.
+     Transcribes the World Map *Code based* into *Sprite based* map in the scene.
      */
     func createMapSprite() {
         for (y, tileRow) in worldMap.map.enumerate() {

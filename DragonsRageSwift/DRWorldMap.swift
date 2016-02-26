@@ -41,8 +41,16 @@ class DRWorldMap {
      */
     var tileTextures: [WorldMapGridType: SKTexture] = [.None: SKTexture()]
     
+    /**
+     The size which each tile in the World Map Scene should have.
+     
+     Obs.: By default it is based on the size of the Grass sprite image.
+     */
     let worldTileSize: CGFloat
     
+    /**
+     Initializes the Tile Texture dictionary (`tileTextures`) and set the size of the world sprite nodes (`worldTileSize`).
+     */
     init() {
         // MARK: Adding which sprite each TileType should be
         
@@ -64,6 +72,9 @@ class DRWorldMap {
         worldTileSize = tileTextures.first!.1.size().height
     }
     
+    /**
+     Creates the initial world map.
+     */
     func generateMap() {
         // Temp map (Mockup)
         let tempMap: [[Int]] =
@@ -100,6 +111,7 @@ class DRWorldMap {
             [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
         ];
         
+        // Convert the Int based map into WorldMapGridType map
         var tempMapConverted: [[WorldMapGridType]] = [[]]
         for (index, tempRow) in tempMap.enumerate() {
             let tempRowConverted: [WorldMapGridType] = tempRow.map( { WorldMapGridType(rawValue: $0)! } )
