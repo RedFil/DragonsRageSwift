@@ -20,6 +20,7 @@
 		FD315E211C80047600704665 /* tile-mountain@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD315E1B1C80047600704665 /* tile-mountain@2x.png */; };
 		FD315E251C800FEB00704665 /* DRWorldMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD315E241C800FEB00704665 /* DRWorldMap.swift */; };
 		FD315E271C801E9C00704665 /* tile-water@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD315E261C801E9C00704665 /* tile-water@2x.png */; };
+		FD315E2A1C827F4D00704665 /* WorldMapMovimentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD315E291C827F4D00704665 /* WorldMapMovimentationController.swift */; };
 		FD488B501C7B8DEC00B6149E /* DRScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD488B4F1C7B8DEC00B6149E /* DRScene.swift */; };
 		FDE6D23A1C7AD18D00A113AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6D2391C7AD18D00A113AE /* AppDelegate.swift */; };
 		FDE6D23E1C7AD18D00A113AE /* ScnMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6D23D1C7AD18D00A113AE /* ScnMenu.swift */; };
@@ -65,6 +66,7 @@
 		FD315E1B1C80047600704665 /* tile-mountain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tile-mountain@2x.png"; sourceTree = "<group>"; };
 		FD315E241C800FEB00704665 /* DRWorldMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRWorldMap.swift; sourceTree = "<group>"; };
 		FD315E261C801E9C00704665 /* tile-water@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tile-water@2x.png"; sourceTree = "<group>"; };
+		FD315E291C827F4D00704665 /* WorldMapMovimentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldMapMovimentationController.swift; sourceTree = "<group>"; };
 		FD488B4F1C7B8DEC00B6149E /* DRScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRScene.swift; sourceTree = "<group>"; };
 		FDE6D2361C7AD18D00A113AE /* DragonsRageSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonsRageSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE6D2391C7AD18D00A113AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -172,7 +174,7 @@
 			children = (
 				FD315E0D1C7D928000704665 /* Models */,
 				FDE6D26D1C7AD89E00A113AE /* Resources */,
-				FDE6D26B1C7AD84700A113AE /* ViewControllers */,
+				FDE6D26B1C7AD84700A113AE /* Controllers */,
 				FDE6D26C1C7AD86400A113AE /* Scenes */,
 				FDE6D2391C7AD18D00A113AE /* AppDelegate.swift */,
 				FDE6D2411C7AD18D00A113AE /* Main.storyboard */,
@@ -201,12 +203,13 @@
 			path = DragonsRageSwiftUITests;
 			sourceTree = "<group>";
 		};
-		FDE6D26B1C7AD84700A113AE /* ViewControllers */ = {
+		FDE6D26B1C7AD84700A113AE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				FDE6D23F1C7AD18D00A113AE /* GameViewController.swift */,
+				FD315E291C827F4D00704665 /* WorldMapMovimentationController.swift */,
 			);
-			name = ViewControllers;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		FDE6D26C1C7AD86400A113AE /* Scenes */ = {
@@ -383,6 +386,7 @@
 				FDE6D2401C7AD18D00A113AE /* GameViewController.swift in Sources */,
 				FD315E0F1C7D929700704665 /* DRCharacter.swift in Sources */,
 				FDE6D23A1C7AD18D00A113AE /* AppDelegate.swift in Sources */,
+				FD315E2A1C827F4D00704665 /* WorldMapMovimentationController.swift in Sources */,
 				FD315E251C800FEB00704665 /* DRWorldMap.swift in Sources */,
 				FD315E111C7D92C400704665 /* DRSpriteNode.swift in Sources */,
 				FD315E0C1C7D902500704665 /* ScnWorldMap.swift in Sources */,

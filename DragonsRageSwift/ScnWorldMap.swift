@@ -15,14 +15,14 @@ class ScnWorldMap: DRScene {
     static let mainCharacter: DRCharacter = DRCharacter(imageNamed: "player")
     
     /**
-     The bases of the WorldMap grid.
+     The movement controller.
      */
-    private let worldMap: DRWorldMap = DRWorldMap()
+    private let moveController: WorldMapMovimentationController = WorldMapMovimentationController()
     
     /**
-     The `Node` that hold the World Map Tiles as Sprite Nodes.
+     Holds the touch dedicated to the movementation.
      */
-    private var gridMapNode: DRSpriteNode = DRSpriteNode()
+    private var movingTouch: UITouch?
     
     override func didMoveToView(view: SKView) {
         // Adding the main character in the scene
@@ -32,18 +32,38 @@ class ScnWorldMap: DRScene {
         self.addChild(ScnWorldMap.mainCharacter)
         
         // Map creation
-        createLogicalMap()
+        moveController.worldMap.generateMap()
         createMapSprite()
-        gridMapNode.position.y += self.frame.height
+        moveController.gridMapNode.position.y += self.frame.height
         
-        self.addChild(gridMapNode)
+        self.addChild(moveController.gridMapNode)
         
         // MARK: HUD creation
         // TODO: Create the HUD sprite nodes
     }
     
+    // MARK: Map/Character Movementation
+    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        // TODO: Implement the interaction with the in-game menu.
+        // Save the first touch as the Moving Touch
+        if let firstTouch = touches.first {
+            movingTouch = firstTouch
+            moveController.receiveMoveTouchBegan(firstTouch.locationInNode(self))
+        }
+    }
+    
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        // Search for the Moving Touch between all touches
+        for touch in touches where touch == movingTouch {
+            moveController.receiveMoveTouchMoved(touch.locationInNode(self))
+        }
+    }
+    
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        // Search for the Moving Touch between all touches
+        for touch in touches where touch == movingTouch {
+            moveController.receiveMoveTouchEnded()
+        }
     }
     
     override func update(currentTime: CFTimeInterval) {
@@ -52,22 +72,15 @@ class ScnWorldMap: DRScene {
     // MARK: Map creation
     
     /**
-     Creates the map as a code for future transcription to sprites.
-     */
-    func createLogicalMap() {
-        worldMap.generateMap()
-    }
-    
-    /**
      Transcribes the World Map *Code based* into *Sprite based* map in the scene.
      */
     func createMapSprite() {
-        for (y, tileRow) in worldMap.map.enumerate() {
+        for (y, tileRow) in moveController.worldMap.map.enumerate() {
             for (x, tileType) in tileRow.enumerate() {
-                let tileNode = DRSpriteNode(texture: worldMap.tileTextures[tileType])
-                tileNode.position = CGPoint(x: CGFloat(x) * worldMap.worldTileSize, y: CGFloat(-y) * worldMap.worldTileSize)
+                let tileNode = DRSpriteNode(texture: moveController.worldMap.tileTextures[tileType])
+                tileNode.position = CGPoint(x: CGFloat(x) * moveController.worldMap.worldTileSize, y: CGFloat(-y) * moveController.worldMap.worldTileSize)
                 
-                gridMapNode.addChild(tileNode)
+                moveController.gridMapNode.addChild(tileNode)
             }
         }
     }
