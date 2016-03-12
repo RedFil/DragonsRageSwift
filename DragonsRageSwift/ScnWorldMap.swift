@@ -38,6 +38,10 @@ class ScnWorldMap: DRScene {
         
         self.addChild(moveController.gridMapNode)
         
+        // Setup the player moviment
+        moveController.setSceneForDirectionalPad(self)
+        moveController.hideDirectionalPad()
+        
         // MARK: HUD creation
         // TODO: Create the HUD sprite nodes
     }
@@ -77,7 +81,7 @@ class ScnWorldMap: DRScene {
     func createMapSprite() {
         for (y, tileRow) in moveController.worldMap.map.enumerate() {
             for (x, tileType) in tileRow.enumerate() {
-                let tileNode = DRSpriteNode(texture: moveController.worldMap.tileTextures[tileType])
+                let tileNode = DRTileNode(tileType: tileType)
                 tileNode.position = CGPoint(x: CGFloat(x) * moveController.worldMap.worldTileSize, y: CGFloat(-y) * moveController.worldMap.worldTileSize)
                 
                 moveController.gridMapNode.addChild(tileNode)

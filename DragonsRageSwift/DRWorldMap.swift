@@ -8,26 +8,6 @@
 
 import SpriteKit
 
-/**
- All the possible tile types in the World Map.
- */
-public enum WorldMapGridType: Int {
-    case None = -999
-    
-    // Walkables
-    case Grass = 0
-    case Dirt = 2
-    case Water = 6
-    
-    // Usables (walkables)
-    case Cave = 3
-    case CastleDirt = 4
-    case CastleGrass = 5
-    
-    // Non-walkables
-    case Mountain = 1
-}
-
 class DRWorldMap {
     /**
      The type based world map.
@@ -39,7 +19,7 @@ class DRWorldMap {
     /**
      The Textures dictionary for each value of `WorldMapGridType`.
      */
-    var tileTextures: [WorldMapGridType: SKTexture] = [.None: SKTexture()]
+    static var tileTextures: [WorldMapGridType: SKTexture] = [.None: SKTexture()]
     
     /**
      The size which each tile in the World Map Scene should have.
@@ -55,21 +35,21 @@ class DRWorldMap {
         // MARK: Adding which sprite each TileType should be
         
         // Walkables
-        tileTextures[.Grass] = SKTexture(imageNamed: "tile-grass")
-        tileTextures[.Dirt] = SKTexture(imageNamed: "tile-earth")
-        tileTextures[.Water] = SKTexture(imageNamed: "tile-water")
+        DRWorldMap.tileTextures[.Grass] = SKTexture(imageNamed: "tile-grass")
+        DRWorldMap.tileTextures[.Dirt] = SKTexture(imageNamed: "tile-earth")
+        DRWorldMap.tileTextures[.Water] = SKTexture(imageNamed: "tile-water")
         
         // Usables (walkables)
-        tileTextures[.Cave] = SKTexture(imageNamed: "tile-cave")
-        tileTextures[.CastleDirt] = SKTexture(imageNamed: "tile-castle-earth")
-        tileTextures[.CastleGrass] = SKTexture(imageNamed: "tile-castle-grass")
+        DRWorldMap.tileTextures[.Cave] = SKTexture(imageNamed: "tile-cave")
+        DRWorldMap.tileTextures[.CastleDirt] = SKTexture(imageNamed: "tile-castle-earth")
+        DRWorldMap.tileTextures[.CastleGrass] = SKTexture(imageNamed: "tile-castle-grass")
         
         // Non-walkables
-        tileTextures[.Mountain] = SKTexture(imageNamed: "tile-mountain")
+        DRWorldMap.tileTextures[.Mountain] = SKTexture(imageNamed: "tile-mountain")
         
         
         // Defining the size of the grid tiles
-        worldTileSize = tileTextures.first!.1.size().height
+        worldTileSize = DRWorldMap.tileTextures.first!.1.size().height
     }
     
     /**

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD1DAA421C8BBE6B00C800C3 /* DRTileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DAA411C8BBE6B00C800C3 /* DRTileNode.swift */; };
 		FD315E0C1C7D902500704665 /* ScnWorldMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD315E0B1C7D902500704665 /* ScnWorldMap.swift */; };
 		FD315E0F1C7D929700704665 /* DRCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD315E0E1C7D929700704665 /* DRCharacter.swift */; };
 		FD315E111C7D92C400704665 /* DRSpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD315E101C7D92C400704665 /* DRSpriteNode.swift */; };
@@ -22,6 +23,8 @@
 		FD315E271C801E9C00704665 /* tile-water@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD315E261C801E9C00704665 /* tile-water@2x.png */; };
 		FD315E2A1C827F4D00704665 /* WorldMapMovimentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD315E291C827F4D00704665 /* WorldMapMovimentationController.swift */; };
 		FD488B501C7B8DEC00B6149E /* DRScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD488B4F1C7B8DEC00B6149E /* DRScene.swift */; };
+		FD6D62C11C93B64500427623 /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = FD6D62BF1C93B64500427623 /* dpad.png */; };
+		FD6D62C21C93B64500427623 /* dpadClicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FD6D62C01C93B64500427623 /* dpadClicked.png */; };
 		FDE6D23A1C7AD18D00A113AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6D2391C7AD18D00A113AE /* AppDelegate.swift */; };
 		FDE6D23E1C7AD18D00A113AE /* ScnMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6D23D1C7AD18D00A113AE /* ScnMenu.swift */; };
 		FDE6D2401C7AD18D00A113AE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6D23F1C7AD18D00A113AE /* GameViewController.swift */; };
@@ -53,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD1DAA411C8BBE6B00C800C3 /* DRTileNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRTileNode.swift; sourceTree = "<group>"; };
 		FD315E0B1C7D902500704665 /* ScnWorldMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScnWorldMap.swift; sourceTree = "<group>"; };
 		FD315E0E1C7D929700704665 /* DRCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRCharacter.swift; sourceTree = "<group>"; };
 		FD315E101C7D92C400704665 /* DRSpriteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRSpriteNode.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		FD315E261C801E9C00704665 /* tile-water@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tile-water@2x.png"; sourceTree = "<group>"; };
 		FD315E291C827F4D00704665 /* WorldMapMovimentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldMapMovimentationController.swift; sourceTree = "<group>"; };
 		FD488B4F1C7B8DEC00B6149E /* DRScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRScene.swift; sourceTree = "<group>"; };
+		FD6D62BF1C93B64500427623 /* dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpad.png; sourceTree = "<group>"; };
+		FD6D62C01C93B64500427623 /* dpadClicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpadClicked.png; sourceTree = "<group>"; };
 		FDE6D2361C7AD18D00A113AE /* DragonsRageSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonsRageSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE6D2391C7AD18D00A113AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDE6D23D1C7AD18D00A113AE /* ScnMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScnMenu.swift; sourceTree = "<group>"; };
@@ -120,6 +126,7 @@
 				FD315E121C7D97AC00704665 /* DRCharacterMap.swift */,
 				FD315E101C7D92C400704665 /* DRSpriteNode.swift */,
 				FD315E241C800FEB00704665 /* DRWorldMap.swift */,
+				FD1DAA411C8BBE6B00C800C3 /* DRTileNode.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -127,6 +134,8 @@
 		FD315E221C800EE800704665 /* WorldMap */ = {
 			isa = PBXGroup;
 			children = (
+				FD6D62BF1C93B64500427623 /* dpad.png */,
+				FD6D62C01C93B64500427623 /* dpadClicked.png */,
 				FD315E261C801E9C00704665 /* tile-water@2x.png */,
 				FD315E161C80047600704665 /* tile-castle-earth@2x.png */,
 				FD315E171C80047600704665 /* tile-castle-grass@2x.png */,
@@ -352,7 +361,9 @@
 				FDE6D2431C7AD18D00A113AE /* Main.storyboard in Resources */,
 				FD315E1D1C80047600704665 /* tile-castle-grass@2x.png in Resources */,
 				FD315E1C1C80047600704665 /* tile-castle-earth@2x.png in Resources */,
+				FD6D62C21C93B64500427623 /* dpadClicked.png in Resources */,
 				FD315E1E1C80047600704665 /* tile-cave@2x.png in Resources */,
+				FD6D62C11C93B64500427623 /* dpad.png in Resources */,
 				FD315E201C80047600704665 /* tile-grass@2x.png in Resources */,
 				FDE6D2701C7AD8B800A113AE /* MenuBG@2x.png in Resources */,
 				FDE6D2761C7B88D500A113AE /* MenuBtnRank@2x.png in Resources */,
@@ -384,6 +395,7 @@
 				FD488B501C7B8DEC00B6149E /* DRScene.swift in Sources */,
 				FDE6D23E1C7AD18D00A113AE /* ScnMenu.swift in Sources */,
 				FDE6D2401C7AD18D00A113AE /* GameViewController.swift in Sources */,
+				FD1DAA421C8BBE6B00C800C3 /* DRTileNode.swift in Sources */,
 				FD315E0F1C7D929700704665 /* DRCharacter.swift in Sources */,
 				FDE6D23A1C7AD18D00A113AE /* AppDelegate.swift in Sources */,
 				FD315E2A1C827F4D00704665 /* WorldMapMovimentationController.swift in Sources */,
